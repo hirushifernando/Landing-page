@@ -1,0 +1,313 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+header{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c0c0c0;
+}
+header .logo{
+    position: relative;
+    max-width:120px ;
+}
+header ul{
+    position: relative;
+    display: flex;
+   
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.content{
+    position: relative;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2{
+    color: #333;
+    font-size: 70px;
+    line-height: 1.4em;
+    font-weight: 540;
+}
+.content .textBox h2 span{
+   color: #d91900; 
+   font-size: 1em;
+   font-weight: 900;
+}
+.content .textBox p{
+    color: #333;
+    font-size: 30px;
+}
+
+.content .imgBox{
+  width: 600px;
+  display: flex;  
+  justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+.content .imgBox img{
+    max-width: 1000px;
+    height: 600px;
+}
+.thumb{
+    position: absolute;
+    left:50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+    max-width: 60px;
+}
+.sci{
+    position: absolute;
+    top:50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    width: 40px;
+    height: 40px;
+    font-size: 60px;
+}
+.cricle{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #d76100;
+    clip-path: circle(600px at right 800px);
+}
+.about{
+    display:flex;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap:3px;
+}
+.about-img img{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-width:700px;
+    height: auto;
+    width:1000px;
+    padding-left: 5px;
+}
+.about-text h2{
+    font-size: 60px;
+    padding-left: 50px;
+    margin-bottom: 10px;
+}
+.about-text p {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 20px;
+}
+.product-section{
+    background-color: rgb(204, 188, 47);
+}
+#services{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+.sub-title{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+.container{
+    padding: 20px;
+}
+.services-list{
+    margin-top:30px;
+}
+.services-list div{
+    background-color:#c0c0c0;
+    margin:10px ;
+    padding: 14px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    display: inline-block; /* Add this line */
+    vertical-align: top; /* Align the inline-block elements */
+}
+.services-list div img {
+    display: block; /* Ensures images behave as blocks */
+    width: 100%; /* Make the images fill the width of their container */
+    height: auto; /* Maintain aspect ratio */
+}
+.services-list div h2{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.services-list div:hover{
+    transform: translateY(-10px);
+}
+.bx-dots-horizontal-rounded {
+    /* Define your styles here */
+    color: #ffffff; /* Change the color to white */
+    font-size: 50px; /* Increase the font size */
+    text-align: center; /* Center the dots horizontally */
+    display: block; /* Ensure it takes the full width of its container */
+    margin: 0 600px; /* Auto margins horizontally center the element */
+}
+
+.certificate{
+    background-color: rgb(204, 188, 47);
+    padding: 20px;
+}
+
+  .certificate-text {
+    text-align: center;
+  }
+
+  .certificate-text h2 {
+    color: #000000;
+    font-size: 60px;
+    margin-bottom:15px;
+  }
+
+  .certificate-text p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .certificate-text .cer {
+    margin-top: 40px;
+    margin: 25px;
+  }
+  footer{
+    background: #c0c0c0;
+    padding-top: 20px;
+}
+.container-footer{
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    width: 50%;
+}
+h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-content p{
+    width:190px;
+    margin: auto;
+    padding: 10px;
+}
+.footer-content ul{
+    text-align: center;
+}
+.list{
+    padding: 0;
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type:none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #070707;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+a:hover{
+    color: #ffffff;
+}
+
+.bottom-bar{
+    background: #434343;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    color: #ffffff;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+  
